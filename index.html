@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asteroid Arcade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud" aria-live="polite">
+        <div>Score: <span id="score">0</span></div>
+        <div>Leben: <span id="lives">3</span></div>
+        <div>Status: <span id="status">Bereit</span></div>
+      </header>
+
+      <canvas
+        id="gameCanvas"
+        width="900"
+        height="600"
+        role="img"
+        aria-label="Asteroids Spielbereich"
+      ></canvas>
+
+      <p class="hint">
+        Steuerung: ←/→ Drehen, ↑ Schub, Leertaste Schießen, P Pause, Enter Neustart bei Game Over
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
